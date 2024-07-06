@@ -61,11 +61,17 @@ export const ListSkeleton = ({totalSkeleton}) => {
   export const DetailSkeleton = () => {
     return (
       <>
-           <div className='w-full h-full mx-10 my-6 flex flex-col gap-8 justify-center'>
-           <Skeleton height={50} width="100%" />
-           <Skeleton height={180} width="100%"/>
-           <Skeleton height={180} width="100%"/>
-           <Skeleton height={180} width="100%"/>
+          <div className="mt-6 w-full lg:w-[70%] h-full lg:m-auto mx-10">
+            <Skeleton height={60} width="100%"/>
+            <div className='mt-12 lg:mx-10 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16'>
+              <Skeleton height={450} width="100%"/>
+            <div className='flex flex-col gap-10 lg:gap-16'>
+              <Skeleton height={300} width="100%"/>
+              <Skeleton height={400} width="100%"/>
+            </div>
+         
+      
+         </div>
           </div>
         </>
     )
